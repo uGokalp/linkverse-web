@@ -1,0 +1,14 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: web
+    src: ./
+    engine: next
+    primary: true
+    public: true
+    presets:
+      env:
+        - name: BACKEND_URL
+        - name: NEXT_PUBLIC_BACKEND_URL
+        - name: NEXTAUTH_URL
+    dev: npm run dev
